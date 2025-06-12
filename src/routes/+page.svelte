@@ -52,8 +52,7 @@
         > div {
             grid-column: 1 / -1;
             display: grid;
-            grid: ". . ." auto
-               / subgrid;
+            grid-template-columns: subgrid;
             background: hsl(0, 0%, 90%);
             padding-bottom: 3px;
             border-radius: 5px;
@@ -89,8 +88,7 @@
                 grid-column: 2 / -1;
                 align-self: flex-start;
                 display: grid;
-                grid: ". ." auto
-                       / subgrid;
+                grid-template-columns: subgrid;
                 gap: 5px;
                 padding: 8px 16px;
 
@@ -98,8 +96,8 @@
                     --height: 30px;
                     grid-column: 1 / -1;
                     display: grid;
-                    grid: "icon name" auto
-                       / subgrid;
+                    grid-template-columns: subgrid;
+                    grid-template-areas: "icon name";
                     gap: 10px;
                     min-height: var(--height);
 
