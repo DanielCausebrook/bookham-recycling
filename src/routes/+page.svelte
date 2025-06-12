@@ -1,6 +1,7 @@
 <script lang="ts">
     import "$lib/index";
     import items from "$lib/items";
+    import extraInformationMd from "$lib/extra-information.md?raw";
     import showdown from 'showdown';
 
     const converter = new showdown.Converter({simpleLineBreaks: true});
@@ -33,6 +34,9 @@
             </div>
         </div>
     {/each}
+</div>
+<div class="extra-information">
+    {@html converter.makeHtml(extraInformationMd)}
 </div>
 <style>
     :root {
@@ -124,5 +128,8 @@
                 }
             }
         }
+    }
+    .extra-information {
+        margin-top: 40px;
     }
 </style>
