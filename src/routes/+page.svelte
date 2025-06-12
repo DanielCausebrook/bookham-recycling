@@ -132,4 +132,9 @@
     .extra-information {
         margin-top: 40px;
     }
+    @media print {
+        .items {
+            break-after: page;
+        }
+    }
 </style>
