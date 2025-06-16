@@ -118,7 +118,7 @@
     .items {
         display: grid;
         grid: ". . ." / 1fr auto 1.2fr;
-        gap: 10px 0;
+        gap: 6px 0;
 
         > div {
             grid-column: 1 / -1;
@@ -135,7 +135,7 @@
                 display: flex;
                 flex-flow: column nowrap;
                 gap: 5px;
-                padding: 8px 16px 11px;
+                padding: 6px 12px 7px;
                 background: var(--pill-title-bg);
 
                 > .name {
@@ -153,7 +153,7 @@
                 display: grid;
                 grid-template-columns: subgrid;
                 gap: 5px;
-                padding: 8px 16px 11px;
+                padding: 6px 12px 6px;
 
                 > div {
                     --height: 30px;
@@ -174,14 +174,11 @@
                         grid-area: name;
                         display: flex;
                         flex-flow: column nowrap;
+                        margin: 1px 0;
+
                         > .name {
                             font-weight: 600;
                             font-size: 120%;
-                        }
-                        > .details {
-                            > :global(p) {
-                                margin: 0;
-                            }
                         }
                     }
                 }

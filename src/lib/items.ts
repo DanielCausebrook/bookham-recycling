@@ -11,6 +11,7 @@ import TetraPakIcon from "@tabler/icons/outline/milk.svg";
 import SoftPlasticIcon from "@tabler/icons/outline/shopping-bag.svg";
 import PlasticMailingWrapperIcon from "@tabler/icons/outline/mail-spark.svg";
 import PaperCupIcon from "@tabler/icons/outline/cup.svg";
+import PenIcon from "@tabler/icons/outline/ballpen.svg";
 
 type Items = {
     name: string,
@@ -50,6 +51,12 @@ let items: Items = [
         name: "Bookham Baptist Church",
         items: [
             { name: "Blister Packs", icon: BlisterPackIcon, },
+        ]
+    },
+    {
+        name: "Bookham Library",
+        items: [
+            { name: "Pens", icon: PenIcon, }
         ]
     },
     {
